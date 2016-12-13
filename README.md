@@ -1,0 +1,1 @@
+Simple program that can kill a process by name on Windows.
