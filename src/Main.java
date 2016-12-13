@@ -2,7 +2,7 @@ import java.util.Optional;
 
 public class Main {
     public static void main(String[] args) {
-        String procName = args[1];
+        String procName = args[0];
 
         if (procName == null || procName.length() == 0) {
             throw new IllegalStateException("Missing proc name");
@@ -20,5 +20,4 @@ public class Main {
     private static void kill(Proc proc) {
         CommandRunner.run("taskkill /pid " + proc.getPid() + " /f");
     }
-
 }
